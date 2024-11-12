@@ -9,7 +9,7 @@ public class Auto {
 	int registro;
 	static String cantidadCreados;
 	
-int cantidadAsientos(int ctd) {
+int cantidadAsientos() {
 	return asientos.length;
 }
 
