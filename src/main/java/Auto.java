@@ -27,7 +27,7 @@ String verificarIntegridad() {
 		}
 	}
 	
-	if (this.motor.registro != this.registro) {
+	if (motor.registro != this.registro) {
 		return "Las piezas no son originales";
 	}
 	
