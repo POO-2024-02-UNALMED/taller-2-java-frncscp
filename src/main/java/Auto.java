@@ -21,8 +21,8 @@ int cantidadAsientos() {
 
 String verificarIntegridad() {
 	
-	for (int i = 0; i < asientos.length; i++) {
-		if (asientos[i] != null && asientos[i].registro != this.registro) {
+	for (Asiento asiento : asientos) {
+		if (asiento != null && asiento.registro != this.registro) {
 			return "Las piezas no son originales";
 		}
 	}
