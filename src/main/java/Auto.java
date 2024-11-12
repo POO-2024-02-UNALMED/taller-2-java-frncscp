@@ -10,7 +10,7 @@ public class Auto {
 	static String cantidadCreados;
 	
 int cantidadAsientos() {
-	int counter = 0
+	int counter = 0;
 	for (Asiento asiento : asientos) {
 		if (asiento != null) {
 			counter++;
