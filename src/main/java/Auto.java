@@ -21,17 +21,18 @@ int cantidadAsientos() {
 
 String verificarIntegridad() {
 	
+	if (motor.registro != this.registro) {
+		return "Las piezas no son originales";
+	}
+	
+	
 	for (Asiento asiento : asientos) {
 		if (asiento != null && asiento.registro != this.registro) {
 			return "Las piezas no son originales";
 		}
 	}
 	
-	if (motor.registro != this.registro) {
-		return "Las piezas no son originales";
-	}
-	
-	return "Auto Original";
+	return "Auto original";
 }
 
 }
